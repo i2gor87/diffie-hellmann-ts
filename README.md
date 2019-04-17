@@ -35,7 +35,7 @@ Returns categories if the payload is right:
 ####### Diffie-Hellman algorithm implemented in code:
 
 1. Alice computes random big prime number: `p`
-2. Alice generates big prime number `g` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7Bp-1%7D%20mod%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
+2. Alice generates big prime number `g` = $$g^{p-1} mod \: p$$
 3. Alice computes `x` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7BA%7D%20mod%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
 4. Alice generates random big prime number: `A`
 5. Alice sends `p`, `g` and `x` to Bob to `bobURL/get_key`
