@@ -32,7 +32,7 @@ Returns categories if the payload is right:
     "categories": ["category1", "category2"]
 }
 ```
-####### Diffie-Hellman algorithm implemented in code:
+##### Diffie-Hellman algorithm implemented in code:
 
 1. Alice computes random big prime number: `p`
 2. Alice generates big prime number `g` = <a href="https://www.codecogs.com/eqnedit.php?latex=g^{p-1}&space;mod&space;\:&space;p" target="_blank"><img src="https://latex.codecogs.com/png.latex?g^{p-1}&space;mod&space;\:&space;p" title="g^{p-1} mod \: p" /></a>
