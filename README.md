@@ -35,15 +35,15 @@ Returns categories if the payload is right:
 ####### Diffie-Hellman algorithm implemented in code:
 
 1. Alice computes random big prime number: `p`
-2. Alice generates big prime number `g` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7Bp-1%7D%20mod%20p&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
-3. Alice computes `x` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7BA%7D%20mod%20p&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+2. Alice generates big prime number `g` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7Bp-1%7D%20mod%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
+3. Alice computes `x` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7BA%7D%20mod%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
 4. Alice generates random big prime number: `A`
 5. Alice sends `p`, `g` and `x` to Bob to `bobURL/get_key`
 6. Bob generates random big prime number: `B`
-7. Bob calculates `y` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7BB%7D%20mod%20p&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+7. Bob calculates `y` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20g%5E%7BB%7D%20mod%20%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
 8. Bob sends `y` to Alice as response to her request to `bobURL/get_key`
-9. Alice calculates secret key `alice_K` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20y%5E%7BA%7D%20mod%20p&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
-10. Bob calculates secret key `bob_K` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20x%5E%7BB%7D%20mod%20p&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+9. Alice calculates secret key `alice_K` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20y%5E%7BA%7D%20mod%20%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
+10. Bob calculates secret key `bob_K` = ![equation](http://www.sciweavers.org/tex2img.php?eq=%20x%5E%7BB%7D%20mod%20p&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0)
 ```js
 alice_K === bob_K
 ```
