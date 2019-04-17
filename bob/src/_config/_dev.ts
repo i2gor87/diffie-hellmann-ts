@@ -1,0 +1,1 @@
+export const aliceURL = "http://localhost:3601";
