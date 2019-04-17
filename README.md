@@ -35,15 +35,15 @@ Returns categories if the payload is right:
 ####### Diffie-Hellman algorithm implemented in code:
 
 1. Alice computes random big prime number: `p`
-2. Alice generates big prime number `g` = $$g^{p-1} mod \: p$$
-3. Alice computes `x` = $$g^{A} mod \: p$$
+2. Alice generates big prime number `g` = <a href="https://www.codecogs.com/eqnedit.php?latex=g^{p-1}&space;mod&space;\:&space;p" target="_blank"><img src="https://latex.codecogs.com/png.latex?g^{p-1}&space;mod&space;\:&space;p" title="g^{p-1} mod \: p" /></a>
+3. Alice computes `x` = <a href="https://www.codecogs.com/eqnedit.php?latex=g^{A}&space;mod&space;\:&space;p" target="_blank"><img src="https://latex.codecogs.com/png.latex?g^{A}&space;mod&space;\:&space;p" title="g^{A} mod \: p" /></a>
 4. Alice generates random big prime number: `A`
 5. Alice sends `p`, `g` and `x` to Bob to `bobURL/get_key`
 6. Bob generates random big prime number: `B`
-7. Bob calculates `y` = $$g^{B} mod \: p$$
+7. Bob calculates `y` = <a href="https://www.codecogs.com/eqnedit.php?latex=g^{B}&space;mod&space;\:&space;p" target="_blank"><img src="https://latex.codecogs.com/png.latex?g^{B}&space;mod&space;\:&space;p" title="g^{B} mod \: p" /></a>
 8. Bob sends `y` to Alice as response to her request to `bobURL/get_key`
-9. Alice calculates secret key `alice_K` = $$y^{A} mod \: p$$
-10. Bob calculates secret key `bob_K` = $$x^{B} mod \: p$$
+9. Alice calculates secret key `alice_K` = <a href="https://www.codecogs.com/eqnedit.php?latex=y^{A}&space;mod&space;\:&space;p" target="_blank"><img src="https://latex.codecogs.com/png.latex?y^{A}&space;mod&space;\:&space;p" title="y^{A} mod \: p" /></a>
+10. Bob calculates secret key `bob_K` = <a href="https://www.codecogs.com/eqnedit.php?latex=x^{B}&space;mod&space;\:&space;p" target="_blank"><img src="https://latex.codecogs.com/png.latex?x^{B}&space;mod&space;\:&space;p" title="x^{B} mod \: p" /></a>
 ```js
 alice_K === bob_K
 ```
